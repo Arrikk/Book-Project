@@ -1881,7 +1881,7 @@ CREATE TABLE `marketing` (
   `content` text NOT NULL,
   `status` int(11) NOT NULL,
   `publish_date` date DEFAULT NULL,
-  `slug` text NOT NULL,
+  `slug` varchar(50) NOT NULL,
   `created_at` date NOT NULL,
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`),
