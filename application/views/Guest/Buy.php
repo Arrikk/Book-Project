@@ -299,10 +299,10 @@ $filters = "school_id=" . $school_id . "&class_id=" . $class_id . "&professor_id
 
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" name="remember">  I agree to Terms and Conditions <a href="#"><u>here</u></a></label>
+                                <label><input type="checkbox" name="remember">  I agree to Terms and Conditions <a href="https://termly.io/our-terms-of-use/"><u>here</u></a></label>
                               </div>
                               <div class="checkbox">
-                                <label><input type="checkbox" name="remember">  I agree to Privacy Policy <a href="#"><u>here</u></a></label>
+                                <label><input type="checkbox" name="remember">  I agree to Privacy Policy <a href="https://termly.io/our-privacy-policy/"><u>here</u></a></label>
                               </div>
                           <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
