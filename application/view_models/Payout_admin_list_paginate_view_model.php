@@ -19,7 +19,7 @@ class Payout_admin_list_paginate_view_model
     protected $_page;
     protected $_num_links = 5;
     protected $_column = ['<input type="checkbox" class="id_checkbox_all">','Id','Order Id','User','Paypal Email','Amount','Status','Action'];
-    protected $_field_column = ['','id','order_id','user_id','','amount','status',''];
+    protected $_field_column = ['id','order_id','user_id','paypal_email','amount','status'];
     protected $_list = [];
     protected $_links = '';
     protected $_sort_base_url = '';

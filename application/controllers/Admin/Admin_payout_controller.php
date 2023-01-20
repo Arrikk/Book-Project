@@ -31,7 +31,7 @@ class Admin_payout_controller extends Admin_controller
         $session = $this->get_session();
         $format = $this->input->get('format', TRUE) ?? 'view';
         $order_by = $this->input->get('order_by', TRUE) ?? '';
-        $direction = $this->input->get('direction', TRUE) ?? 'ASC';
+        $direction = $this->input->get('direction',TRUE) ?? 'ASC';
         $per_page_sort = $this->input->get('per_page_sort', TRUE) ?? 25;
 
         $this->_data['view_model'] = new Payout_admin_list_paginate_view_model(
@@ -39,6 +39,7 @@ class Admin_payout_controller extends Admin_controller
             $this->pagination,
             '/admin/payout/0');
         $this->_data['view_model']->set_heading('Payout');
+
         $this->_data['view_model']->set_id(($this->input->get('id', TRUE) != NULL) ? $this->input->get('id', TRUE) : NULL);
 		$this->_data['view_model']->set_order_id(($this->input->get('order_id', TRUE) != NULL) ? $this->input->get('order_id', TRUE) : NULL);
 		$this->_data['view_model']->set_user_id(($this->input->get('user_id', TRUE) != NULL) ? $this->input->get('user_id', TRUE) : NULL);
@@ -80,7 +81,6 @@ class Admin_payout_controller extends Admin_controller
             }
             // print_r($user_id_array);exit;
             if($this->_data['view_model']->get_list() ){
-
                 foreach ( $this->_data['view_model']->get_list() as $key => &$value) {
                     $value->paypal_email = $user_email_array[$value->user_id] ?? '';
                     $value->user_id = $user_id_array[$value->user_id] ?? '';
