@@ -38,6 +38,7 @@ class Review_model extends Manaknight_Model
 		['status', 'Status', 'required|integer'],
 		['comment', 'Comment', 'required'],
 		['rating', 'Rating', 'required'],
+		['private_review', 'Private Review', 'required'],
 		
     ];
 	protected $_validation_edit_rules = [
@@ -48,6 +49,7 @@ class Review_model extends Manaknight_Model
 		['status', 'Status', 'required|integer'],
 		['comment', 'Comment', 'required'],
 		['rating', 'Rating', 'required'],
+		['private_review', 'Private Review', 'required'],
 		
     ];
 	protected $_validation_messages = [
