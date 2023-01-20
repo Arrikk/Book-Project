@@ -45,6 +45,7 @@ class Admin_review_controller extends Admin_controller
 		$this->_data['view_model']->set_comment(($this->input->get('comment', TRUE) != NULL) ? $this->input->get('comment', TRUE) : NULL);
 		$this->_data['view_model']->set_rating(($this->input->get('rating', TRUE) != NULL) ? $this->input->get('rating', TRUE) : NULL);
 		$this->_data['view_model']->set_status(($this->input->get('status', TRUE) != NULL) ? $this->input->get('status', TRUE) : NULL);
+		$this->_data['view_model']->set_private_review(($this->input->get('private_review', TRUE) != NULL) ? $this->input->get('private_review', TRUE) : NULL);
 		
         $where = [
             'id' => $this->_data['view_model']->get_id(),
@@ -53,8 +54,7 @@ class Admin_review_controller extends Admin_controller
 			'comment' => $this->_data['view_model']->get_comment(),
 			'rating' => $this->_data['view_model']->get_rating(),
 			'status' => $this->_data['view_model']->get_status(),
-			
-            
+			'private_review' => $this->_data['view_model']->get_private_review(),
         ];
 
         $this->_data['view_model']->set_total_rows($this->review_model->count($where));

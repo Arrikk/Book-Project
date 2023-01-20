@@ -21,6 +21,7 @@ class Review_model extends Manaknight_Model
 		'status',
 		'comment',
 		'rating',
+		'private_review'
 		
     ];
 	protected $_label_fields = [

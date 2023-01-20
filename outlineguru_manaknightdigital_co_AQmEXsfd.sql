@@ -16754,6 +16754,7 @@ CREATE TABLE `review` (
   `user_id` int(11) NOT NULL,
   `inventory_id` int(11) NOT NULL,
   `order_id` int(11) DEFAULT NULL,
+  `private_review` text NOT NULL,
   `comment` text NOT NULL,
   `rating` int(11) NOT NULL,
   `status` int(11) NOT NULL,
