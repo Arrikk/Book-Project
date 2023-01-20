@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="card" id="ticket_filter_listing">
             <div class="card-body">
               <h5 class="primaryHeading2 text-md-left">
-                    Tickets Searchzzz
+                    Tickets Search
               </h5>
                 <?= form_open('/member/ticket/0', ['method' => 'get']) ?>
                     <div class="row">
